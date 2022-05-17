@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+  font-size: medium;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #046a39;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.navbar-text {
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar-text h3 {
+  font-size: 1rem;
+}
+.navbar-text h2 {
+  font-size: 1.8rem;
+}
+.navbar-img {
+  background-color: #fff;
+  padding: 1rem;
+  width: 20%;
+}
+.navbar-img img {
+  width: 100%;
+}
+.header {
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 3px 6px #00000029;
+  overflow: hidden;
+  background-color: #fff;
+  white-space: nowrap;
+}
+.header-text1 {
+  padding: 0.3rem 1rem;
+  color: #6c737a;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+}
+.header-text2 {
+  padding: 0.3rem;
+  color: #046a39;
+  font-size: 1.25rem;
+  position: relative;
+  animation: mymove 15s infinite;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+@keyframes mymove {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+.main {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.slider {
+  width: 30%;
+}
+.slider .boxes {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slider .boxes .box-item {
+  width: 100%;
+  position: absolute;
+  display: none;
+  right: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide_buttons {
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #fff;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn:active,
+.slide_btn:hover,
+.slide_btn.active {
+  color: #046a39;
+  cursor: pointer;
+}
+
+.login {
+  width: 30%;
+}
+.login-box {
+  background-color: #ffffff;
+  display: flex;
+  padding: 1rem;
+  border-radius: 6px;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 0.5px solid #cccccc;
+  border-radius: 12px;
+  height: 90%;
+}
+.login select {
+  border: 0px;
+  width: auto;
+  font-size: 1.25rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2rem;
+}
+.login input {
+  margin-top: 3rem;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #e4eaef;
+  font-size: 1.5rem;
+}
+::placeholder {
+  color: #a3a9b9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a3a9b9;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #a3a9b9;
+}
+.login button {
+  margin-top: 3rem;
+  padding: 1.25rem;
+  border: 0px;
+  border-radius: 6px;
+  background-color: #046a39;
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.links {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.links a {
+  text-decoration: none;
+  color: #046a39;
+}
+.links img {
+  width: 1rem;
+  margin: 0 0.7rem 0 0.4rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+footer p {
+  font-size: 1rem;
+  color: #464646;
+  margin-bottom: 1.75rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1440px) {
+  .slider {
+    width: 45vw;
+  }
+  .login {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider {
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 2rem;
+  }
+  .login {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 12px;
+  }
+  .navbar-img {
+    width: 100px;
+  }
+}
