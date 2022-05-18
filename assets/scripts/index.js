@@ -27,3 +27,12 @@ function slide(sliderIndex) {
   }
 }
 slide();
+
+function getselectValue() { 
+  let selectVal = document.getElementById("selectId").value;
+  if (selectVal === "Arabic") {
+    document.getElementsByTagName("body")[0].style.direction = "rtl"; 
+  }else{
+    document.getElementsByTagName("body")[0].style.direction = "ltr"; 
+  }
+}
